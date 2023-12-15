@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RCR Mart</title>
+    <link rel="stylesheet" href="../css/productM.css" />
+    <link
+      rel="shortcut icon"
+      href="../image/LOGO/Frame 2.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../image/LOGO/Frame 3.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="right">
+        <li>Most selles</li>
+        <li>Least Sells</li>
+        <a href="../index.html"><li>Log out</li></a>
+      </div>
+    </nav>
+    <div class="container">
+      <aside>
+        <button>Customer Records</button>
+        <a href="category.html"><button>Category Management</button></a>
+        <a href="#"
+          ><button id="products-management">Products Mangement</button></a
+        >
+        <button>Theme</button>
+      </aside>
+      <!--------------------------------- Products------------------------------------- -->
+      <main class="container">
+        <div class="products-management">
+          <div class="form">
+            <form action="#">
+              <h2>Add Product</h2>
+              <div class="p-name">
+                <label for="product-name">Product Name</label>
+                <input type="text" name="product-name" id="product-name" />
+              </div>
+              <div class="p-category">
+                <label for="product-category">Product Category</label>
+                <select name="product-category" id="product-category">
+                  <option value="Fruit">Fruit</option>
+                  <option value="Dress">Dress</option>
+                  <option value="Electric">Electric</option>
+                  <option value="Snacks">Snacks</option>
+                </select>
+              </div>
+              <div class="p-price">
+                <label for="product-price">Product Price</label>
+                <input type="number" id="product-price" />
+              </div>
+              <div class="p-quantity">
+                <label for="product-quantity">Product Quantity</label>
+                <input
+                  type="number"
+                  name="product-quantity"
+                  id="product-quantity"
+                />
+              </div>
+              <div class="p-images">
+                <label for="product-image">Product Image</label>
+                <input type="file" id="product-image" />
+              </div>
+              <div class="btn-manange">
+                <button class="add" type="submit" id="add">Add</button>
+                <button class="reset" type="reset">Reset</button>
+              </div>
+            </form>
+          </div>
+          <div class="p-table">
+            <table>
+              <caption>
+                <h2>Products Mangement</h2>
+              </caption>
+              <thead>
+                <tr>
+                  <th>Product Id</th>
+                  <th>Product Name</th>
+                  <th>Total</th>
+                  <th colspan="2">Action</th>
+                </tr>
+              </thead>
+              <tbody id="p-management-table">
+                <tr>
+                  <!-- <td>0</td>
+                  <td>Apple Mac</td>
+                  <td>11</td>
+                  <td><button class="edit">Edit</button></td>
+                  <td><button class="table-remove">Remove</button></td>
+                </tr> -->
+                </tr>
+              </tbody>
+            </table>
+            <div class="total">Total</div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../js/product/main.js" defer></script>
+  </body>
+</html>

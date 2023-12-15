@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RCR Mart</title>
+    <link rel="stylesheet" href="../css/category.css" />
+    <link
+      rel="shortcut icon"
+      href="../image/LOGO/Frame 2.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../image/LOGO/Frame 3.png" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="right">
+        <li>Most selles</li>
+        <li>Least Sells</li>
+        <a href="../index.html"><li>Log out</li></a>
+      </div>
+    </nav>
+    <div class="container">
+      <aside>
+        <button>Customer Records</button>
+        <button>Category Management</button>
+        <a href="productManagement.html"
+          ><button id="products-management">Products Mangement</button></a
+        >
+        <button>Theme</button>
+      </aside>
+      <main class="table-container">
+        <!-- Category---------------------------------- -->
+        <div class="category-management">
+          <div class="form form-category">
+            <form action="#">
+              <h2>Add Category</h2>
+              <div class="p-category">
+                <label for="product-category">Product Category</label>
+                <input
+                  type="text"
+                  name="p-category"
+                  id="product-category"
+                  placeholder="Capitlize Example: Fruit"
+                />
+              </div>
+              <div class="p-description">
+                <label for="product-description">Product Description</label>
+                <textarea
+                  name="product-description"
+                  id="product-description"
+                  cols="30"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="btn-manange">
+                <button class="add" type="submitb">Add</button>
+                <button class="reset" type="reset">Reset</button>
+              </div>
+            </form>
+          </div>
+          <div class="table-container">
+            <table class="pC-management">
+              <caption>
+                <h2>Products Category</h2>
+              </caption>
+              <thead>
+                <tr>
+                  <th>Product Id</th>
+                  <th>Product Category</th>
+                  <th>Description</th>
+                  <th colspan="2">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0001</td>
+                  <td>Mobile</td>
+                  <td><span></span></td>
+                  <td>
+                    <button class="edit">Edit</button>
+                    <button class="remove">Remove</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="total">Total</div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../js/admin/main.js" defer></script>
+  </body>
+</html>

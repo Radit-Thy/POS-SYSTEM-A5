@@ -1,80 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RCR Mart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="image/LOGO/Frame 2.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RCR Mart</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" href="image/LOGO/Frame 2.png" type="image/x-icon" />
-</head>
-
-<body>
-  <nav>
-    <div class="left">
-      <div class="logo">
-        <a href="#"><img src="image/LOGO/Frame 3.png" alt="" /></a>
+  <body>
+    <nav>
+      <div class="left">
+        <div class="logo">
+          <a href="#"><img src="image/LOGO/Frame 3.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="right">
+        <li>Most selles</li>
+        <a href="pages/cart.html"><li>Cart</li></a>
+        <a href="pages/admin.html" target="_blank">
+          <li id="admin">Admin</li>
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <main class="card-container"></main>
+      <!-- Category goes here -->
+      <div class="most-sell">
+        <button>Fruit</button>
       </div>
     </div>
-    <div class="right">
-      <li>Most selles</li>
-      <a href="pages/cart.html">
-        <li>Cart</li>
-      </a>
-      <a href="pages/admin.html">
-        <li>Admin</li>
-      </a>
-    </div>
-  </nav>
-  <div class="container">
-    <aside>
-      <div class="manager">
-        <h1>Carts</h1>
-      </div>
-      <div class="cart-container">
-        <div class="cart-item">
-          <div class="cart-name">
-            <h4>Name</h4>
-          </div>
-          <div class="cart-detail">
-            <p>Price: <span></span>$</p>
-          </div>
-          <div class="cart-quanity">
-            <input type="number" />
-          </div>
-          <div class="cart-manage-btn">
-            <button class="update-cart">Edit</button>
-            <button class="remove-cart">Remove</button>
-          </div>
-        </div>
-      </div>
-      <div class="cart-manage">
-        <button class="checkout">Checkout</button>
-      </div>
-      <div class="cart-container"></div>
-    </aside>
-    <main class="card-container">
-      <!-- card items --------------------------------->
-      <!-- <div class="card">
-        <div class="card-img">
-          <img src="image/Dolls/doll01.jpg" alt="" />
-        </div>
-        <div class="card-title">
-          <h4>Name: <span></span></h4>
-          <p>Available in stock: <span></span></p>
-        </div>
-        <div class="btn-card">
-          <button class="btn add">Add to card</button>
-          <p><span></span>$</p>
-        </div>
-      </div> -->
-      <!-- ----------------------------------------- -->
-    </main>
-    <div class="most-sell">
-      <button>Fruit</button>
-    </div>
-  </div>
-  <script type="module" src="js/index/main.js" defer></script>
-</body>
-
+    <script src="js/index/main.js" defer></script>
+  </body>
 </html>

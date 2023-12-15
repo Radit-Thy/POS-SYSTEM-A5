@@ -7,7 +7,7 @@ a {
   text-decoration: none;
 }
 nav {
-  background-color: rgb(34, 131, 241);
+  background-color: dodgerblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,35 +36,49 @@ li {
 }
 .container {
   display: flex;
-  height: 91vh;
+  height: 92dvh;
 }
-aside {
-  background-color: cornflowerblue;
-  width: 10%;
-  height: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-aside button {
-  height: 10%;
-}
-a {
-  height: 10%;
-}
-aside a > button {
+.cart-item {
   width: 100%;
-  height: 100%;
+  background-color: rgb(109, 109, 224);
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
-aside a > button:hover {
-  cursor: pointer;
+.btn {
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+  border: none;
+  padding: 10px;
 }
 main {
-  width: 90%;
+  background-color: #f4f2f2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(228, 211, 190);
+}
+
+.most-sell {
+  background-color: cornflowerblue;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.most-sell button {
   padding: 10px;
 }
