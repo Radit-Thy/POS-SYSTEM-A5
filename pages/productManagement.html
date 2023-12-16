@@ -28,7 +28,7 @@
     </nav>
     <div class="container">
       <aside>
-        <button>Customer Records</button>
+        <button>DashBoard</button>
         <a href="category.html"><button>Category Management</button></a>
         <a href="#"
           ><button id="products-management">Products Mangement</button></a
@@ -37,6 +37,28 @@
       </aside>
       <!--------------------------------- Products------------------------------------- -->
       <main class="container">
+        <div class="btn-add">
+          <button class="add">
+            <img src="../image/Icons/plus.svg" alt="" />Add Product
+          </button>
+          <div class="filter-category">
+            <div class="title">
+              <h2>Filter by Category</h2>
+            </div>
+            <select name="filter-category" id="filter-category">
+              <option value="All">All Category</option>
+            </select>
+          </div>
+          <div class="search">
+            <input
+              type="search"
+              name="search-produc"
+              id="search-product"
+              placeholder="Type to search"
+            />
+            <input type="submit" value="Search" />
+          </div>
+        </div>
         <div class="products-management">
           <div class="form">
             <form action="#">
@@ -47,12 +69,7 @@
               </div>
               <div class="p-category">
                 <label for="product-category">Product Category</label>
-                <select name="product-category" id="product-category">
-                  <option value="Fruit">Fruit</option>
-                  <option value="Dress">Dress</option>
-                  <option value="Electric">Electric</option>
-                  <option value="Snacks">Snacks</option>
-                </select>
+                <select name="product-category" id="product-category"></select>
               </div>
               <div class="p-price">
                 <label for="product-price">Product Price</label>
@@ -65,10 +82,6 @@
                   name="product-quantity"
                   id="product-quantity"
                 />
-              </div>
-              <div class="p-images">
-                <label for="product-image">Product Image</label>
-                <input type="file" id="product-image" />
               </div>
               <div class="btn-manange">
                 <button class="add" type="submit" id="add">Add</button>
@@ -85,20 +98,13 @@
                 <tr>
                   <th>Product Id</th>
                   <th>Product Name</th>
+                  <th>Category</th>
+                  <th>Price</th>
                   <th>Total</th>
                   <th colspan="2">Action</th>
                 </tr>
               </thead>
-              <tbody id="p-management-table">
-                <tr>
-                  <!-- <td>0</td>
-                  <td>Apple Mac</td>
-                  <td>11</td>
-                  <td><button class="edit">Edit</button></td>
-                  <td><button class="table-remove">Remove</button></td>
-                </tr> -->
-                </tr>
-              </tbody>
+              <tbody id="p-management-table"></tbody>
             </table>
             <div class="total">Total</div>
           </div>

@@ -68,6 +68,48 @@ main {
   gap: 10px;
   padding: 10px;
 }
+.btn-add {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter-category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.filter-category select {
+  padding: 10px;
+}
+.search {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.search input {
+  padding: 10px;
+}
+.btn-add .add {
+  background-color: cornflowerblue;
+  width: 10%;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.btn-add .add:active {
+  background-color: #fff;
+  color: white;
+}
+.btn-add .add img {
+  width: 15px;
+}
 .products-management {
   display: flex;
   align-items: start;
@@ -77,12 +119,16 @@ main {
   width: 100%;
 }
 .form {
+  display: none;
+}
+.show-form {
+  display: block;
   background-color: teal;
   width: 30%;
   color: white;
 }
 .p-table {
-  width: 70%;
+  width: 100%;
 }
 .form h2 {
   text-align: center;

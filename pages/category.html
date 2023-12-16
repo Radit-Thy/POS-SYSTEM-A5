@@ -28,8 +28,10 @@
     </nav>
     <div class="container">
       <aside>
-        <button>Customer Records</button>
-        <button>Category Management</button>
+        <button>DahsBoard</button>
+        <a href="#">
+          <button>Category Management</button>
+        </a>
         <a href="productManagement.html"
           ><button id="products-management">Products Mangement</button></a
         >
@@ -37,6 +39,9 @@
       </aside>
       <main class="table-container">
         <!-- Category---------------------------------- -->
+        <div class="btn-add">
+          <button class="add-category">Add Product</button>
+        </div>
         <div class="category-management">
           <div class="form form-category">
             <form action="#">
@@ -60,7 +65,7 @@
                 ></textarea>
               </div>
               <div class="btn-manange">
-                <button class="add" type="submitb">Add</button>
+                <button class="add" type="submit">Add</button>
                 <button class="reset" type="reset">Reset</button>
               </div>
             </form>
@@ -78,13 +83,13 @@
                   <th colspan="2">Action</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="category-Container">
                 <tr>
                   <td>0001</td>
                   <td>Mobile</td>
                   <td><span></span></td>
+                  <td><button class="edit">Edit</button></td>
                   <td>
-                    <button class="edit">Edit</button>
                     <button class="remove">Remove</button>
                   </td>
                 </tr>
@@ -95,6 +100,6 @@
         </div>
       </main>
     </div>
-    <script src="../js/admin/main.js" defer></script>
+    <script src="../js/category/category.js" defer></script>
   </body>
 </html>
